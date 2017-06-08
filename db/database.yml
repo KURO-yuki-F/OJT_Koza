@@ -1,0 +1,8 @@
+
+development:
+  adapter: mysql2
+  database: ppo
+  host: localhost
+  username: root
+  password:
+  encoding: utf8
