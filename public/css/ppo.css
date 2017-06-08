@@ -1,0 +1,157 @@
+@charset "UTF-8";
+html {
+	overflow-y: scroll;
+}
+/* リセットおまじない--------------------------------- */
+body, h1, h2, h3, h4, h5, p, ul, ol, li, dl, dt, dd {
+	margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background: #ffdc00
+  text-align: center;
+  font-size: 16px;
+  min-width:100%;
+  	-webkit-text-size-adjust: 100%;
+  font-family: "Noto Sans Japanese", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", "Meiryo", "HGPｺﾞｼｯｸM", "Osaka", "ＭＳ Ｐゴシック", sans-serif, Century Gothic, Arial;
+}
+
+header {
+    padding-bottom: 35px;
+    padding-left: 20px;
+    background: #fff;
+      /*text-align: center;*/
+    /*position: fixed;*/
+    /*z-index: 30;*/
+    width: 100%;
+    text-align: right;
+}
+
+header img {
+  width:20%;
+  height: 20%;
+  float: left;
+}
+header ul {
+	width: 700px; /* 文字が改行されるので100pxプラス */
+  margin: 0 auto;
+  /*display: block;*/
+}
+header li {
+  list-style: none;
+  display: inline-block;
+  color: #ffffff;
+	width: 10%; /* liが改行されるので調整 */
+  line-height: 6px;
+}
+/*.header-title img {
+  width:15%;
+  height:15%;
+  float: left;
+}*/
+
+/*.header-logo {
+    color: #777;
+    font-weight: 700;
+    font-size: 22px;
+    font-family: 'Dosis', sans-serif;
+    float: left;
+}*/
+.header-menu{
+  display: block;
+}
+
+header li img {
+  width:120%;
+  height:120%;
+}
+
+#sec0 {
+  background: url(../img/PPre_edited.jpg) no-repeat center center;
+  height: 400px;
+  /* 以下4行は各ブラウザに対して設定しています。 */
+  -webkit-background-size: cover; /* chrome */
+  -moz-background-size: cover; /* firefox */
+  -o-background-size: cover; /* opera */
+  background-size: cover; /* 上記以外 */
+}
+
+section {
+  text-align: center;
+  padding:100px 0
+}
+
+#sec1 {
+  background: url(../img/bg03_edited.jpg) no-repeat center center;
+  height: 400px;
+  /* 以下4行は各ブラウザに対して設定しています。 */
+  -webkit-background-size: cover; /* chrome */
+  -moz-background-size: cover; /* firefox */
+  -o-background-size: cover; /* opera */
+  background-size: cover; /* 上記以外 */
+  padding:
+}
+
+#sec1 .aboutpic{
+  float: right;
+  padding-right:50px;
+}
+
+
+#sec2 {
+  background: url(../img/PP_011.jpg) no-repeat center center;
+  height: 400px;
+  /* 以下4行は各ブラウザに対して設定しています。 */
+  -webkit-background-size: cover; /* chrome */
+  -moz-background-size: cover; /* firefox */
+  -o-background-size: cover; /* opera */
+  background-size: cover; /* 上記以外 */
+}
+
+#sec2 .img{
+
+}
+
+#sec3 {
+  background: url(../img/bg03_edited.jpg) no-repeat center center;
+  height: 400px;
+  /* 以下4行は各ブラウザに対して設定しています。 */
+  -webkit-background-size: cover; /* chrome */
+  -moz-background-size: cover; /* firefox */
+  -o-background-size: cover; /* opera */
+  background-size: cover; /* 上記以外 */
+}
+
+#sec4 {
+
+}
+
+.contact {
+	display: none;
+}
+
+.contact-wrapper{
+	margin : 100px;
+}
+/*
+.contact-container{
+  margin: 10px;
+  border : medium solid #ff00ff;
+}*/
+
+.contact-container{
+	display: none;
+}
+
+.contact-list{
+	padding: 10px;
+}
+
+.form{
+	padding: 10px;
+}
+
+/*#sec5 {
+	display: none;
+}*/

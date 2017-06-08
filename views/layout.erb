@@ -1,0 +1,26 @@
+
+<!-- ここには各ページ共通のことを書きます。 -->
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="サイトをキーワードで説明">
+    <meta name="description" content="どんなサイトかを短い文章で説明">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=1">
+    <link rel="icon" href="">
+    <link rel="stylesheet" type="text/css" media="screen and ( min-width: 769px)" href="./css/ppo.css">
+    <link rel="stylesheet" type="text/css" media="screen and ( max-width: 768px)" href="css/style_sp.css"> -->
+    <link href="./js/jquery.bxslider/jquery.bxslider.css" rel="stylesheet" />
+    <script type="text/javascript" src="./js/ppo.js"></script> -->　<!--古いバージョン読み込み-->
+    <title><%= @title %></title>
+</head>
+<body>
+  <%= yield %>
+</body>
+
+</html>
+
+
+<!-- ページ遷移するなら下のやつ使う -->
+<!-- <title><%= yield_content :title %></title>
+  <link rel="stylesheet" type="text/css" href="<%= yield_content :css %>">
