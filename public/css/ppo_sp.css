@@ -1,0 +1,420 @@
+@charset "UTF-8";
+html {
+	overflow-y: scroll; /* IEへの対応 http://www.htmq.com/style/overflow-y.shtml */
+	/*Internet Explorerが独自に追加したプロパティ*/
+	/*画面に収まりきれなかったときにスクロールして表示することを許可するか否か*/
+}
+body, h1, h2, h3, h4, h5, p, ul, ol, li, dl, dt, dd {
+	margin: 0px;
+	padding: 0px;
+}
+
+@media screen and (max-width: 768px){
+.none {display:none}
+}
+
+@media all and (max-width: 768px) {
+  .header-menu-right{
+	  display: none;
+  }
+
+	.menu-icon {
+    display: block;
+  }
+
+	header img {
+	  width:25%;
+	  height: 25%;
+	  text-align:left;
+	}
+
+
+	#sec0 {
+	  background: url(../img/PPO.jpg) no-repeat center center;
+	  /* 以下4行は各ブラウザに対して設定しています。 */
+	  -webkit-background-size: cover; /* chrome */
+	  -moz-background-size: cover; /* firefox */
+	  -o-background-size: cover; /* opera */
+	  background-size: cover; /* 上記以外 */
+	}
+
+	section {
+	  text-align: center;
+
+	}
+
+	.menu-icon{
+	  display: none;
+	}
+
+	/*フェードイン設定１*/
+	.top {
+		display: none;
+	    position: relative;
+			width: 100%;
+	}
+
+	.ppo_name {
+		/*display: none;*/
+		max-width: 25%;
+		background: center;
+		background-color: white;
+		text-align: center;
+		padding: 3em 32em 3em 32em;
+		position: absolute;
+		left: 5%;
+		top: 50%;
+	}
+
+
+	.section-title img {
+	  max-width: 30%;
+		padding: 1em;
+
+	}
+
+	.txt-contents {
+		font-size: 0.8em;
+	}
+
+
+	#sec1 {
+	  background-color: #ffff14;
+		/*height: 400px;*/
+		/* 以下4行は各ブラウザに対して設定しています。 */
+		-webkit-background-size: cover; /* chrome */
+		-moz-background-size: cover; /* firefox */
+	  	-o-background-size: cover; /* opera */
+		background-size: cover; /* 上記以外 */
+		/*width: 100%;*/
+	}
+
+
+	/*6/13  */
+	.aboutpic {
+	  /*display: flex;
+	  padding-left:5em;
+	  padding-bottom:4em;*/
+		/*max-width: 80%;
+		width: 80%;
+		height: auto;*/
+
+	}
+
+	.aboutpic p{
+		/*border: 1px dashed #ccc;*/
+	  padding: 2em;
+		font-size:0.8em;
+		line-height: 2em;
+		padding: 25px 100px;
+
+	}
+
+	.aboutpic p br {
+		display: none;
+	}
+
+	.aboutpic img {
+	  max-width:40%;
+	  height:auto;
+	  /*margin: 0px 0 50px 0;
+		position:*/
+	}
+	/*6/13ここまで*/
+
+	.text {
+		font-weight: 500;
+	}
+
+
+	#sec2 {
+
+	}
+/*玉城　小さくできました*/
+	.contents-wrap, .contents-wrap:nth-child(odd)  {
+		flex-direction: column-reverse;
+		justify-content: space-between;
+		display: none;
+		}
+
+
+		.left-up-to-down img{
+	    display: none;
+			}
+		.right-up-to-down img{
+			display: none;
+			}
+		.contents-wrap img {
+			display: none;
+			}
+		.figcaption img {
+      display: none;
+	    }
+			.financier-text{
+			    display: none;
+			  }
+			.minicake-text {
+			   display: none;
+			  }
+
+	  #acMenu img {
+				widows: 85%;
+				max-width: 85%;
+				}
+
+    .ac{
+			display: none;
+		}
+
+	.text {
+		text-align: center;
+	}
+ .mini {
+	 position: relative;
+	 right: -4em;
+ }
+
+	#sec3 {
+		background-color: #ffff14;
+		/*height: 400px;*/
+		/* 以下4行は各ブラウザに対して設定しています。 */
+		-webkit-background-size: cover; /* chrome */
+		-moz-background-size: cover; /* firefox */
+		-o-background-size: cover; /* opera */
+		background-size: cover; /* 上記以外 */
+		width: 100%;
+
+	}
+
+	.wagiri {
+	  z-index: 3;
+	  max-width: 8%;
+		margin-left: 5%;
+	  margin-bottom: 4%;
+	}
+
+	.kodawari {
+		background-color: #ffff14;
+		display: flex;
+		padding: 0 20px 0px 20px;
+	}
+
+	.container {
+		background-color: #ffff14;
+	}
+
+	.kodawari-wrapper {
+	  text-align: center;
+	}
+
+	.kodawari-list {
+		display: inline-block;
+	}
+
+	.kodawari-icon img {
+		max-width: 70%;
+		height: auto;
+	}
+
+
+	#sec4{
+	  background: url(../img/bg04.jpg) no-repeat center center;
+		/*height:400px;*/
+	  /* 以下4行は各ブラウザに対して設定しています。 */
+	  -webkit-background-size: cover; /* chrome */
+	  -moz-background-size: cover; /* firefox */
+	  -o-background-size: cover; /* opera */
+	  background-size: cover; /* 上記以外 */
+	}
+
+
+		.shoplist{
+			width:100%;
+	    max-width: 100%;
+			height: auto;
+		}
+		.list img{
+			width:100%;
+	    max-width: 60%;
+			height: auto;
+		}
+
+	 .list{
+		 margin-bottom: 3em;
+	 }
+	 .list p{
+		 font-size: 0.6em;
+	 }
+	 .shop-right{
+		 background-color: #ffff50;
+		 border-radius: 0.5em;
+		 margin: 1em;
+	 }
+
+	 .contact-wrapper{
+	   padding: inherit;
+	 }
+
+	 h1{
+	   font-size: 30px;
+	 }
+	 .contact-container{
+	   background-color: #EEF190;
+	   width: 90%;
+	   margin:0 auto;
+	   border-radius: 30px;
+	 }
+
+	 .contact-list{
+	   margin:15px;
+	   padding: 10px;
+	 }
+
+
+
+	 .ess{
+	   color: red;
+	 }
+
+	 .form {
+	 /*基本のスタイル*/
+	 display: inline-block;
+	 margin-bottom: 15px;
+	 width: 200px;
+	 height: 10px;
+	 border: solid 1px #ccc;
+	 border-radius: 5px;
+	 box-shadow: none;
+	 padding: 20px;
+	 /*フォーカスしたときのトランジション設定 すべてのプロパティが0.5秒で切り替わる*/
+	 transition: all 0.5s;
+
+	 }
+
+	 .arrow-form {
+	 /*フォーカスしていないときは非表示に*/
+	 display: none;
+	 /*input要素にスタイルを合わせます*/
+	 box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.4);
+	 }
+
+	 .form:focus {
+	 /*フォーカスした時に影をつける*/
+	 box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.4);
+	 /*フォーカスした時に枠線を太く濃く*/
+	 border: solid 2px #666;
+	 }
+
+	 .form:focus + .arrow-form {
+	 /*フォーカスしたらツールチップを表示させる*/
+	 display: inline;
+	 }
+	 .arrow_box {
+	 	position: relative;
+	 	background: yellow;
+	 	border: 2px solid white;
+	 	margin-left: auto;
+	 	padding: 6px;
+	 	color: black;
+	 }
+	 .arrow_box:after, .arrow_box:before {
+	 	right: 100%;
+	 	top: 50%;
+	 	border: solid transparent;
+	 	content: " ";
+	 	height: 0;
+	 	width: 0;
+	 	position: absolute;
+	 	pointer-events: none;
+	 }
+
+	 .arrow_box:after {
+	 	border-color: rgba(201, 52, 52, 0);
+	 	border-right-color: #c93434;
+	 	border-width: 6px;
+	 	margin-top: -6px;
+	 }
+	 .arrow_box:before {
+	 	border-color: rgba(171, 44, 44, 0);
+	 	border-right-color: #ab2c2c;
+	 	border-width: 10px;
+	 	margin-top: -10px;
+	 }
+
+	 #text-form{
+	   display: block;
+	   text-align: center;
+	   width:100%;
+
+	 }
+
+	 #contact-button{
+	   background-color: yellow;
+	   width: 100px;
+	   height: 40px;
+	   border: none;
+	   border-radius: 10px;
+	   margin-top: 30px;
+	 }
+
+	 #contact-button:hover{
+	   background-color: #EAFB8B;
+	   box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.4);
+	 }
+
+
+
+	 .complete{
+	   position: fixed;
+	   width :100%;
+	   height :100%;
+
+	 }
+
+	 .thanks-contact{
+	   position: fixed;
+	   max-width:50%;
+	   max-height:30%;
+	   top: 0;
+	   left: 0;
+	   right: 0;
+	   bottom: 0;
+	   margin: auto;
+	   text-align: center;
+	 }
+
+
+
+	 footer {
+	   text-align: center;
+	   padding: 40px 0;
+	   color: black;
+	   background-color: #ffff14;
+	   }
+
+
+	   .social-icon {
+
+	   vertical-align: top;
+	   text-align: center;
+	   display: inline-block;
+	   background: rgba(94, 144, 255, 0.75);
+	   width: 52px;
+	   height: 52px;
+		 max-width: 10%
+ 		height:auto;
+	   padding-top: 13px;
+	   border-radius: 50%;
+	   color: #e3e3e3;
+	   font-size: 24px;
+	   margin: 0 15px;
+	   }
+
+	   .social-icon:hover{
+	   color: #e3e3e3;
+	   background-color: rgb(94, 144, 255);
+	   }
+
+	   .copyright {
+	   margin-top: 20px;
+	   }

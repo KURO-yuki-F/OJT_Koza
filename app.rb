@@ -17,37 +17,41 @@ configure do
   set :public_folder, File.dirname(__FILE__) +  "/public"
 end
 
+# helpers do
+#   def back_
+# end
+
 
 
 #--------------------ここ以下から見てください-----------------------------------#
 # get '/' do = @route("/")で
 # erb :home = return template("list_tmpl", item_list=item_list)　と一緒
 # erbはHTMLファイルと思ってくれて良いです。
-get '/' do
+get '/ppo_okinawa' do
   @title = 'パイナップルパーティーオキナワ新商品紹介'
   erb :ppo
 end
 
-get'/contact' do
-  @title= 'contact'
-  erb :finish
+get'/form_complete' do
+  @title= 'お問い合わせ完了'
+  erb :form_complete
 end
 
 # 無記入でもデータ挿入されてページ遷移したので、そうならないようにした。もっと良い書き方ありそう。
 post '/new'do
   @title ='お問い合わせページ'
-  @name = params[:name]
+  @name_kj = params[:name_kj]
+  @name_kt = params[:name_kt]
   @email = params[:email]
   @tele = params[:tele]
-  @address = params[:address]
   @body = params[:body]
-  @all = @name + @email + @tele + @body
+  @all = @name_kj + @name_kt + @email + @tele + @body
 
   contact = Contact.new do |c|
-    c.name = @name
+    c.name_kj = @name_kj
+    c.name_kt = @name_kt
     c.email = @email
     c.tele = @tele
-    c.address = @address
     c.body = @body
     if @all != ""
      c.save
@@ -55,13 +59,14 @@ post '/new'do
   end
 
   if @all == ""
-      puts '入力してください'
-      redirect '/'
+      redirect '/ppo_okinawa'
   elsif contact.valid? && contact.save
-    redirect '/contact'
+    redirect '/form_complete'
   else
     redirect back
   end
+
+  redirect_to hogehoge_path
 
 end
 
