@@ -52,7 +52,6 @@ PLATFORMS
 DEPENDENCIES
   activerecord
   mysql2
-  rack
   rack-flash3
   rake
   sinatra
