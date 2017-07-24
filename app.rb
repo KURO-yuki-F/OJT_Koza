@@ -3,11 +3,13 @@ require 'bundler'
 Bundler.require
 #これは気にしないでください
 require 'sinatra/reloader'
+require "rack-flash"
 
-ActiveRecord::Base.configurations=YAML.load_file('db/database.yml')
-ActiveRecord::Base.establish_connection(:development)
+class PpoApp < Sinatra::Base
 
-module ppo do
+
+  ActiveRecord::Base.configurations=YAML.load_file('db/database.yml')
+  ActiveRecord::Base.establish_connection(:development)
 
 
   class Contact < ActiveRecord::Base
@@ -31,7 +33,7 @@ module ppo do
   # erbはHTMLファイルと思ってくれて良いです。
 
 
-  get '/ppo_okinawa' do
+  get '/' do
     @title = 'パイナップルパーティーオキナワ新商品紹介'
     erb :ppo
   end
@@ -65,7 +67,7 @@ module ppo do
 
 
     if @all == ""
-        redirect '/ppo_okinawa'
+        redirect '/'
     elsif contact.valid? && contact.save
       redirect '/form_complete'
     else
@@ -79,6 +81,5 @@ module ppo do
   post '/' do
     redirect '/'
   end
-
-
 end
+

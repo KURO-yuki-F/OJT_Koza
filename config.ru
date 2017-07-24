@@ -1,9 +1,8 @@
-require 'rubygems'
-require 'sinatra/base'
-class ppoApp < Sinatra::Base
-  get '/hello' do
-    'Good Sunday Morning!'
-  end
-end
-run ppoApp
+require "rubygems"
+require "bundler"
+Bundler.require
+
+require_relative "./app"
+
+run PpoApp
 

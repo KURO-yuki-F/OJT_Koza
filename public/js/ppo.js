@@ -212,11 +212,5 @@ $(function(){
 
 
 
-  // $('.lineup-img').click(function() {
-  //     $(".financier-text").animate({
-  //         width: 'toggle'
-  //
-  //     }, 300);
-  // });  ///*6/15追加*/
 
 });
