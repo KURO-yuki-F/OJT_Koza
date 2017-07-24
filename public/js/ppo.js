@@ -1,5 +1,5 @@
 
-$(function() {
+$(function(){
     $('#loader-img').fadeIn(2500);
     $('#loader-name-img').fadeIn(2500);
 });
