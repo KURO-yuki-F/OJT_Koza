@@ -82,4 +82,3 @@ class PpoApp < Sinatra::Base
     redirect '/'
   end
 end
-
